@@ -4,7 +4,7 @@ LABEL maintainer="PG"
 
 # build Springlobby
 RUN apt update && \
-apt install -y git cmake build-essential libopenal-dev libwxgtk3.0-dev build-essential cmake libwxgtk3.0-dev libcurl4-openssl-dev libalure-dev libboost-thread-dev libboost-filesystem-dev libboost-system-dev libpng12-dev libssl-dev minizip  libglib2.0-bin libglib2.0-dev gettext libalure-dev libgettextpo-dev libminizip-dev doxygen libjsoncpp-dev libnotify-dev libboost-test-dev clang-format clang && \
+apt install -y git cmake build-essential libopenal-dev libwxgtk3.0-dev build-essential cmake libwxgtk3.0-dev libcurl4-openssl-dev libalure-dev libboost-thread-dev libboost-filesystem-dev libboost-system-dev libpng-dev libssl-dev minizip  libglib2.0-bin libglib2.0-dev gettext libalure-dev libgettextpo-dev libminizip-dev doxygen libjsoncpp-dev libnotify-dev libboost-test-dev clang-format clang && \
 git clone --recursive https://github.com/springlobby/springlobby.git && \
 cd springlobby/ && \
 cmake . && \
